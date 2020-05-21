@@ -12,6 +12,9 @@ const Home = async () =>{
         </article>
         `).join('')}
     </div>
+    <div class="Pagination">
+    <a href="#/page/3">Next Page</a>
+    </div>
     `;
     return view
 };

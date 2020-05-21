@@ -11,7 +11,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 }
+
 
 .Header a {
   text-decoration: none;
@@ -84,9 +86,9 @@ body {
 }
 
 .Characters-item h2 {
-  font-size: 18px;
-  font-weight: 300;
-  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -113,6 +115,40 @@ body {
   height: 20px;
   animation: spin 2s linear infinite;
 }
+/* Error404 styles */
+.morty-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.morty{
+  display:block;
+  margin: 30px;
+  top:30px;
+}
+
+@keyframes anim{
+  0%{
+    transform:rotatez(0deg);
+  }
+  50%{
+    transform:rotatez(-10deg)
+  }
+  100%{
+    transform:rotatez(0deg)
+  }
+}
+@keyframes anim2{
+  0%{
+    transform:translatex(-10px);
+  }
+  50%{
+    transform:translatex(10px);
+  }
+  100%{
+    transform:translatex(-10px);
+  }
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -120,15 +156,23 @@ body {
 }
 
 @media  screen and (max-width: 600px) {
+  html{
+    width: 100%;
+    height: 100%;
+  }
     .Main{
-        grid-template-columns: minmax(auto,600px);
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
     .Characters{
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5rem;
-        grid-row-gap: 1.5em;
+        
     }
     .Characters-inner {
         grid-template-columns: 1fr;
-      }
+    }
+    .morty img {
+      width: 300px;
+    }
+    
 }
