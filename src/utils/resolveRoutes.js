@@ -1,9 +1,16 @@
 const resolveRoutes = (route) => {
-    if (route.length <= 3){
-        let validRoute = route === '/' ? route : '/:id';
+    if (route.includes('character/')){
+        let validRoute ='/character/:id';
         return validRoute
     }
-    return `/${route}`;
+    if (route.includes('location/')){
+        let validRoute ='/location/:id';
+        return validRoute
+    }
+    else if(route.length <= 3){
+        let validRoute = route === '/' ? route : '/:id'
+        return validRoute
+    }
 };
 
 export default resolveRoutes

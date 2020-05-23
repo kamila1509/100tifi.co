@@ -1,8 +1,8 @@
 import getHash from '../utils/getHash';
-import getData from '../utils/getData';
+import getDataId from '../utils/getDataId';
 const Character = async () => {
     const id = getHash();
-    const character = await getData(id);
+    const character = await getDataId(id);
     const view = `
     <div class="Characters-inner">
         <article class="Characters-card">
