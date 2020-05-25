@@ -8,6 +8,13 @@ git:
   depth: 3
 script:
   - yarn build
+notifications:
+  email:
+    reciepients:
+    - kamilaw1509@gmail.com
+    on_success: always
+    on_failure: always
+
 deploy:
   provider: pages
   edge: true,
