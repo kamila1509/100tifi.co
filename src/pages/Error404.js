@@ -3,7 +3,7 @@ const Error404 = () =>{
         <div class="Error404">
            <div class="morty-container">
             <div class="morty">
-            <img src="/images/morty404.png">
+            <img src="100tifi.co/images/morty404.png">
             </div>
             </div>
         </div>
