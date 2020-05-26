@@ -14,10 +14,22 @@ body {
   padding: 0 10px;
 }
 
-
 .Header a {
   text-decoration: none;
   color: #15302C;
+  margin: 5px;
+}
+.Header-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+ a.icon{
+  display: none;
+}
+.Header-nav a:active,.Header-nav a:hover{
+  color: #026C86;
+  text-decoration: underline;
 }
 
 .Main {
@@ -173,6 +185,36 @@ body {
     }
     .morty img {
       width: 300px;
+    }
+    #myLinks {
+      display: none;
+      width: 100%;
+      text-align: center;
+      animation-duration: .5s;
+      animation-name: fade;
+    }
+    .Header-main{
+      display: flex;
+      flex-direction: column;
+    }
+    .Header-Logo {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+    .Header-nav{
+      flex-direction: column;
+      padding: 10px;
+    }
+    .Header-nav a.myLink-item{
+      margin: 5px auto;
+
+    }
+    a.icon {
+      display: block;
+      font-size: 25px;
+      line-height: 25px;
+      padding-top: 22px;
     }
     
 }

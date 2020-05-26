@@ -1,4 +1,3 @@
-import getHash from "./getHash";
 import {API} from "./api";
 const getData = async (type,id = 1) => {
     const apiURL = id ? `${API}/${type}/?page=${id}` : `${API}/${type}/`;

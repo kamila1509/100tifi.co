@@ -1,6 +1,5 @@
-import {API} from "./api";
-const getDataId = async (id) => {
-    const apiURL = id ? `${API}/${id}` : `${API}`;
+const getUrl = async (Url) => {
+    const apiURL = Url;
     try {
         const response = await fetch(apiURL);
         const data = await response.json();
@@ -11,4 +10,4 @@ const getDataId = async (id) => {
 };
 
 
-export default getDataId;
+export default getUrl;
